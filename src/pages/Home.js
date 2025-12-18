@@ -160,10 +160,9 @@ function Content() {
             and infrastructure projects.
           </p>
 
-          
-            <a className="btn btn-primary px-4 py-2" href="/about">
-              Learn More
-            </a>
+          <a className="btn btn-primary px-4 py-2" href="/about">
+            Learn More
+          </a>
         </Col>
 
         {/* Image */}
@@ -228,10 +227,9 @@ function Details() {
                   opacity: 0.1,
                 }}
               />
-
               {/* Image */}
               <Card
-                className="border-0"
+                className="border-0 infinitive-image-card"
                 style={{
                   position: "relative",
                   zIndex: 1,
@@ -246,7 +244,7 @@ function Details() {
                   style={{
                     height: "440px",
                     width: "100%",
-                    objectFit: "fill",
+                    objectFit: "fill", // changed from fill
                   }}
                 />
               </Card>
