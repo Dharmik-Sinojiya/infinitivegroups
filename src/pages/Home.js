@@ -514,7 +514,7 @@ function Information() {
 
           @media (max-width: 768px) {
             .service-hover-card {
-              height: 260px;
+              height: 300px;
             }
           }
         `}
