@@ -242,7 +242,7 @@ function Details() {
                   src="https://blog.ipleaders.in/wp-content/uploads/2021/05/jda-1068x623.jpg"
                   alt="Infinitive Groups Projects"
                   style={{
-                    height: "440px",
+                    height: "380px",
                     width: "100%",
                     objectFit: "fill", // changed from fill
                   }}
