@@ -21,9 +21,9 @@ const projects = [
     type: "Residential Building",
     location: "Bharuch, Gujarat",
     images: [
-      "https://infinitivegroups.com/image/IMG_5627%202.JPG",
-      "https://infinitivegroups.com/image/IMG_5634.JPG",
-      "https://infinitivegroups.com/image/IMG_5638.JPG",
+      "./img/img1.jpg",
+      "./img/img2.jpg",
+      "./img/img5.jpg",
     ],
   },
 ];

@@ -26,7 +26,7 @@ export default function About() {
               alt="Construction Project Management"
               loading="lazy"
               className="img-fluid rounded shadow-sm w-100"
-              style={{ height: "360px", objectFit: "cover" }}
+              style={{ height: "360px", objectFit: "fill" }}
             />
           </Col>
 

@@ -7,6 +7,7 @@ import "aos/dist/aos.css";
 import "../index.css";
 import "./Banner.css";
 import "./Ourproject.css";
+// import "./Home.css";
 
 export default function Home() {
   useEffect(() => {
@@ -29,17 +30,17 @@ export default function Home() {
 function Banner() {
   const slides = [
     {
-      image: "https://infinitivegroups.com/image/IMG_5627%202.JPG",
+      image: "./img/img1.jpg",
       slogan1: "Your Vision,",
       slogan2: "Built with Precision",
     },
     {
-      image: "https://infinitivegroups.com/image/IMG_5638.JPG",
+      image: "./img/img3.jpg",
       slogan1: "From Foundation",
       slogan2: "to Finishing Excellence",
     },
     {
-      image: "https://infinitivegroups.com/image/IMG_5636.JPG",
+      image: "./img/img5.jpg",
       slogan1: "We Build Projects,",
       slogan2: "You Build the Future",
     },
@@ -159,13 +160,10 @@ function Content() {
             and infrastructure projects.
           </p>
 
-          <button
-            data-aos="fade-left"
-            className="btn btn-primary mt-3 px-4 py-2"
-            style={{ fontSize: "1rem" }}
-          >
-            LEARN MORE
-          </button>
+          
+            <a className="btn btn-primary px-4 py-2" href="/about">
+              Learn More
+            </a>
         </Col>
 
         {/* Image */}
@@ -292,9 +290,9 @@ function Details() {
                 marginBottom: "24px",
               }}
             >
-              <strong>Infinitive Groups</strong> delivers
-              end-to-end Civil Engineering and Construction Project Management
-              solutions, transforming concepts into reliable, high-value assets.
+              <strong>Infinitive Groups</strong> delivers end-to-end Civil
+              Engineering and Construction Project Management solutions,
+              transforming concepts into reliable, high-value assets.
             </p>
 
             {/* Highlights */}
@@ -332,8 +330,9 @@ function Details() {
                 </li>
               ))}
             </ul>
-
-            <button className="btn btn-primary px-4 py-2">Learn More</button>
+            <a className="btn btn-primary px-4 py-2" href="/about">
+              Learn More
+            </a>
           </Col>
         </Row>
       </Container>
@@ -527,22 +526,58 @@ function Information() {
 // Our Projects Section
 function OurProjects() {
   const projects = [
-    { img: "https://infinitivegroups.com/image/K.jpg", title: "Sarangpur Bhojnalay" },
-    { img: "https://infinitivegroups.com/image/IMG_5627%202.JPG", title: "Aarohi Hights" },
-    { img: "https://infinitivegroups.com/image/IMG_5639.JPG", title: "Commercial Building" },
-    { img: "https://infinitivegroups.com/image/IMG_5632.JPG", title: "Luxury Villa" },
-    { img: "https://infinitivegroups.com/image/IMG_5637.JPG", title: "Residential Apartments" },
+    {
+      img: "https://infinitivegroups.com/image/K.jpg",
+      title: "Sarangpur Bhojnalay",
+      delay: 100,
+    },
+    {
+      img: "https://infinitivegroups.com/image/IMG_5627%202.JPG",
+      title: "Aarohi Hights",
+      delay: 200,
+    },
+    {
+      img: "https://infinitivegroups.com/image/IMG_5639.JPG",
+      title: "Commercial Building",
+      delay: 300,
+    },
+    {
+      img: "https://infinitivegroups.com/image/IMG_5632.JPG",
+      title: "Luxury Villa",
+      delay: 400,
+    },
+    {
+      img: "https://infinitivegroups.com/image/IMG_5637.JPG",
+      title: "Residential Apartments",
+      delay: 500,
+    },
   ];
 
   return (
     <section className="projects-premium-section">
-      <h2 className="projects-premium-title">Our Projects</h2>
+      <h2
+        className="projects-premium-title"
+        data-aos="fade-left"
+        style={{
+          fontSize: "clamp(1.8rem, 5vw, 2.6rem)",
+          marginTop: "3rem",
+          textAlign: "center",
+        }}
+      >
+        Our Projects
+      </h2>
+
       <div className="projects-premium-grid">
-        {projects.map((project, i) => (
-          <div key={i} className={`project-premium-card card-${i + 1}`} data-aos="fade-up">
-            <img src={project.img} alt={project.title} className="project-premium-img" />
+        {projects.map(({ img, title, delay }, i) => (
+          <div
+            key={i}
+            className="project-premium-card"
+            data-aos="zoom-in"
+            data-aos-delay={delay}
+          >
+            <img src={img} alt={title} className="project-premium-img" />
             <div className="project-premium-overlay">
-              <h3>{project.title}</h3>
+              <h3 className="project-premium-title-text">{title}</h3>
             </div>
           </div>
         ))}

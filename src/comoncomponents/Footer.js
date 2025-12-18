@@ -91,7 +91,7 @@ function Footer() {
 
             <div className="d-flex justify-content-center justify-content-md-end gap-3 mt-3">
               <a
-                href="https://www.instagram.com/"
+                href="https://www.instagram.com/infinitive_group_/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
@@ -102,7 +102,7 @@ function Footer() {
                   className="footer-icon"
                 />
               </a>
-              <a href="tel:+919016972420">
+              <a href="tel:+91 v8488895151">
                 <FontAwesomeIcon
                   icon={faHeadset}
                   size="2x"

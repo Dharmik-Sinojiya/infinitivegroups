@@ -19,8 +19,8 @@ function Header() {
         <Navbar.Brand as={Link} to="/">
           <img
             alt="Infinitive Groups"
-            src="./img/67.jpg" // ensure your logo image also reflects Infinitive Groups
-            width="90"
+            src="./img/67.png" // ensure your logo image also reflects Infinitive Groups
+            width="80"
             height="55"
             className="d-inline-block align-top"
           />
@@ -82,7 +82,7 @@ function Header() {
 
             {/* Social Icons */}
             <Nav.Link
-              href="https://www.instagram.com/varay_qc_services/"
+              href="https://www.instagram.com/infinitive_group_/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -94,7 +94,7 @@ function Header() {
             </Nav.Link>
 
             <Nav.Link
-              href="https://wa.me/919016972420"
+              href="https://wa.me/8488895151"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -105,7 +105,7 @@ function Header() {
               />
             </Nav.Link>
 
-            <Nav.Link href="tel:+919016972420">
+            <Nav.Link href="tel:+91 84888 95151">
               <FontAwesomeIcon
                 icon={faHeadset}
                 size="2x"
