@@ -1,38 +1,48 @@
-.App {
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Padding to avoid overlap with fixed header/footer */
+.content {
+  padding-top: 120px; /* height of navbar */
+  padding-bottom: 180px; /* footer height */
+}
+
+/* Header */
+.navbar {
+  background-color: #fff;
+  z-index: 1030; /* ensure it's above carousel */
+}
+
+/* Carousel text overlay */
+.carousel-caption {
+  z-index: 1;
+}
+
+/* Footer */
+.footer {
   text-align: center;
+  padding: 40px 20px;
+  background: #222;
+  color: #fff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* General styles */
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p {
+  margin-bottom: 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+  .content {
+    padding-top: 140px;
   }
 }

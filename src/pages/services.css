@@ -1,0 +1,66 @@
+.split-card {
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.split-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Image container */
+.split-card-image {
+  flex-shrink: 0;
+  width: 150px;       /* fixed width for desktop */
+  height: 100px;      /* fixed height */
+  overflow: hidden;
+  border-radius: 15px 15px 0 0; /* top corners rounded */
+}
+
+.split-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* cover ensures image fills the container without stretching */
+  transition: transform 0.5s ease;
+}
+
+.split-card:hover .split-card-image img {
+  transform: scale(1.05);
+}
+
+/* Content */
+.split-card-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.split-card-content h4 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.split-card-content p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.split-card-content .badge {
+  font-size: 0.85rem;
+  padding: 0.5rem 0.8rem;
+  border-radius: 50px;
+}
+
+/* Responsive */
+@media(max-width: 991px) {
+  .split-card {
+    flex-direction: column;
+  }
+  .split-card-image {
+    width: 100%;
+    height: 200px;
+    border-radius: 15px 15px 0 0;
+    margin-bottom: 15px;
+  }
+}

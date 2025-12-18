@@ -1,0 +1,142 @@
+.banner-slide {
+  height: 680px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.75)
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+/* Text animation */
+.banner-title {
+  font-size: clamp(2.2rem, 5vw, 3.2rem);
+  font-weight: 700;
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUp 1.2s ease forwards;
+}
+
+/* Highlight text */
+.highlight1 {
+  color: #ffd700;
+  position: relative;
+  display: inline-block;
+}
+
+/* Animated underline */
+.highlight1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background-color: #ffd700;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: underlineSlide 1.2s ease forwards;
+  animation-delay: 0.6s;
+}
+
+@keyframes underlineSlide {
+  to {
+    transform: scaleX(1);
+  }
+}
+
+
+/* Button animation */
+.banner-btn {
+  border-radius: 30px;
+  padding: 12px 30px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 1.2s ease forwards;
+  animation-delay: 0.8s;
+}
+
+/* Animations */
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* Project CSS */
+
+
+
+
+
+
+/*  */
+/*  */
+/*  */
+
+
+.projects-section {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+}
+
+.projects-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+  color: #222;
+}
+
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.project-card {
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 220px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+}
+
+.project-img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+}
+
+.project-title {
+  margin: 15px 0;
+  font-size: 1.1rem;
+  color: #333;
+}
