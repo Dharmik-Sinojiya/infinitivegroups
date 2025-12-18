@@ -19,7 +19,7 @@ function Header() {
         <Navbar.Brand as={Link} to="/">
           <img
             alt="Infinitive Groups"
-            src="./img/67.png" // ensure your logo image also reflects Infinitive Groups
+            src="./img/updatedlogo.png" // ensure your logo image also reflects Infinitive Groups
             width="80"
             height="55"
             className="d-inline-block align-top"
