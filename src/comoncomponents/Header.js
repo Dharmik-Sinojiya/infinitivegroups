@@ -94,7 +94,7 @@ function Header() {
             </Nav.Link>
 
             <Nav.Link
-              href="https://wa.me/8488895151"
+              href="https://wa.me/8264856916"
               target="_blank"
               rel="noopener noreferrer"
             >

@@ -3,14 +3,15 @@ import "./footer.css";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone, faHeadset } from "@fortawesome/free-solid-svg-icons";
-import { faInstagram } from "@fortawesome/free-brands-svg-icons";
-import { FaEnvelope, FaWhatsapp } from "react-icons/fa";
+import { faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { FaEnvelope } from "react-icons/fa";
 
 function Footer() {
   return (
     <footer data-aos="fade-up">
       <div className="container">
         <div className="row g-5 footer-main-content">
+          
           {/* Contact Info - LEFT */}
           <div className="col-lg-4 col-md-6 text-center text-md-start order-lg-1 order-2">
             <h5 className="fw-bold">Contact Us</h5>
@@ -20,28 +21,33 @@ function Footer() {
                   href="tel:+918488895151"
                   className="footer-link text-light py-1 d-block"
                 >
-                  <FontAwesomeIcon icon={faPhone} className="me-2" /> +91 84888
-                  95151
+                  <FontAwesomeIcon icon={faPhone} className="me-2" />
+                  +91 84888 95151
                 </a>
               </li>
+
               <li className="mb-2">
                 <a
-                  href="mailto:iinfinitivegroup7@gmail.com"
+                  href="mailto:infinitivegroup7@gmail.com"
                   className="footer-link text-light py-1 d-block"
                 >
-                  <FaEnvelope className="me-2" /> infinitivegroup7@gmail.com
+                  <FaEnvelope className="me-2" />
+                  infinitivegroup7@gmail.com
                 </a>
               </li>
+
               <li className="mb-2">
                 <a
-                  href="https://wa.me/918488895151"
+                  href="https://wa.me/+918264856916"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="footer-link text-light py-1 d-block"
                 >
-                  <FaWhatsapp className="me-2" /> WhatsApp Us
+                  <FontAwesomeIcon icon={faWhatsapp} className="me-2" />
+                  WhatsApp Us
                 </a>
               </li>
+
               <li className="mt-3">
                 <h5 className="fw-bold mb-1" style={{ color: "#00d9ff" }}>
                   Our Office
@@ -49,7 +55,7 @@ function Footer() {
                 <p className="mb-0">
                   Office No: 104, Sicillia, Nr. ABC Circle,
                 </p>
-                <p className="mb-0">Mota Varachha, Surat-394101.</p>
+                <p className="mb-0">Mota Varachha, Surat - 394101</p>
               </li>
             </ul>
           </div>
@@ -58,15 +64,11 @@ function Footer() {
           <div className="col-lg-2 col-md-6 d-flex flex-column align-items-center text-center order-lg-2 order-1">
             <h5 className="fw-bold">Quick Links</h5>
             <ul className="list-unstyled mt-3">
-              {["Home", "about", "Services", "Projects", "contact"].map(
+              {["Home", "About", "Services", "Projects", "Contact"].map(
                 (link, idx) => (
                   <li key={idx} className="mb-2">
                     <Link
-                      to={
-                        link === "Home"
-                          ? "/"
-                          : `/${link.toLowerCase().replace(" ", "")}`
-                      }
+                      to={link === "Home" ? "/" : `/${link.toLowerCase()}`}
                       className="footer-link text-light py-1 d-block"
                     >
                       {link}
@@ -84,6 +86,7 @@ function Footer() {
                 Infinitive <span style={{ color: "#fff" }}>Groups</span>
               </h2>
             </Link>
+
             <p className="mt-3">
               We deliver top-quality construction services with a commitment to
               safety, durability, and client satisfaction.
@@ -102,7 +105,16 @@ function Footer() {
                   className="footer-icon"
                 />
               </a>
-              <a href="tel:+91 v8488895151">
+
+              <a href="https://wa.me/+918264856916" aria-label="WhatsApp">
+                <FontAwesomeIcon
+                  icon={faWhatsapp}
+                  size="2x"
+                  className="footer-icon"
+                />
+              </a>
+
+              <a href="tel:+918488895151" aria-label="Customer Support">
                 <FontAwesomeIcon
                   icon={faHeadset}
                   size="2x"
@@ -118,8 +130,9 @@ function Footer() {
         {/* Bottom Section */}
         <div className="text-center text-light bottom-section">
           <p>
-            © 2025 <span style={{ color: "#00d9ff" }}>Infinitive Groups</span>.
-            All rights reserved. Design and Developed by{" "}
+            © 2025{" "}
+            <span style={{ color: "#00d9ff" }}>Infinitive Groups</span>. All
+            rights reserved. Designed & Developed by{" "}
             <span style={{ color: "#00d9ff" }}>Infinitive Groups</span>.
           </p>
         </div>

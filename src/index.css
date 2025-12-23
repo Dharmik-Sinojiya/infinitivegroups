@@ -32,7 +32,7 @@ main {
 
 /* Default header link styling */
 .header-link {
-  color: #4d4e50; /* your default link color */
+  color: #1e669c; /* your default link color */
   transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
@@ -48,6 +48,15 @@ main {
   /* add other font styles here if needed */
 }
 
+.header-icon {
+  color: #4c4848; /* your default link color */
+}
+
+.header-icon:hover {
+  color: #1167e0 !important;  /* vibrant blue */
+  text-decoration: underline;
+  cursor: pointer;
+}
 
 body {
   margin: 0;
