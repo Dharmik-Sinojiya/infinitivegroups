@@ -525,27 +525,27 @@ function Information() {
 function OurProjects() {
   const projects = [
     {
-      img: "https://infinitivegroups.com/image/K.jpg",
+      img: "/img/img7.jpg",
       title: "Sarangpur Bhojnalay",
       delay: 100,
     },
     {
-      img: "https://infinitivegroups.com/image/IMG_5627%202.JPG",
+      img: "/img/img1.jpg",
       title: "Aarohi Hights",
       delay: 200,
     },
     {
-      img: "https://infinitivegroups.com/image/IMG_5639.JPG",
+      img: "/img/img6.jpg",
       title: "Commercial Building",
       delay: 300,
     },
     {
-      img: "https://infinitivegroups.com/image/IMG_5632.JPG",
+      img: "/img/img3.jpg",
       title: "Luxury Villa",
       delay: 400,
     },
     {
-      img: "https://infinitivegroups.com/image/IMG_5637.JPG",
+      img: "/img/img4.jpg",
       title: "Residential Apartments",
       delay: 500,
     },

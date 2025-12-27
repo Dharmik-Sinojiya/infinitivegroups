@@ -8,10 +8,7 @@ const projects = [
     area: "3,25,000 sq ft",
     type: "Gujarat's Biggest Bhojanshala",
     location: "Sarangpur, Gujarat",
-    images: [
-      "https://infinitivegroups.com/image/45.jpg",
-      "https://infinitivegroups.com/image/46.jpg",
-    ],
+    images: ["./img/img7.jpg"],
   },
   {
     title: "Aarohi Heights",
@@ -20,11 +17,7 @@ const projects = [
     towers: "4 Towers / 1B+G+14",
     type: "Residential Building",
     location: "Bharuch, Gujarat",
-    images: [
-      "./img/img1.jpg",
-      "./img/img3.jpg",
-      "./img/img5.jpg",
-    ],
+    images: ["./img/img1.jpg", "./img/img3.jpg", "./img/img5.jpg"],
   },
   {
     title: "Surat Textile Bourse",
@@ -32,11 +25,7 @@ const projects = [
     area: "4,50,000 sq.ft",
     type: "Textile Shops",
     location: "Surat, Gujarat",
-    images: [
-      "./img/proj3.1.jpeg",
-      "./img/proj3.4.jpeg",
-      "./img/proj3.2.jpeg",
-    ],
+    images: ["./img/proj3.1.jpeg", "./img/proj3.4.jpeg", "./img/proj3.2.jpeg"],
   },
 ];
 
@@ -90,9 +79,7 @@ const Projects = () => {
                     borderRadius: "200px",
                     boxShadow: "0 10px 25px rgba(0,0,0,0.15)",
                     borderLeft:
-                      i % 2 === 0
-                        ? "5px solid #0d6efd"
-                        : "5px solid #fdc50dff",
+                      i % 2 === 0 ? "5px solid #0d6efd" : "5px solid #fdc50dff",
                     width: "250px",
                     textAlign: "center",
                   }}
